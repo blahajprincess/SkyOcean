@@ -1,0 +1,1797 @@
+{
+  "@meowdding:metadata": {
+    "allowMultiline": true,
+    "allowReferences": true,
+    "allowTags": true,
+    "objectAsKeys": true,
+    "@references": {
+      "transparency": "Значение от 0% до 100%, 100% означает полную видимость."
+    }
+  },
+  "key.category.skyocean.main": "SkyOcean",
+  "skyocean": {
+    "@value": "SkyOcean",
+    "config": {
+      "main": {
+        "modifications": {
+          "@value": "Визуальные Изменения",
+          "desc": [
+            "SkyOcean может изменять внешний вид предметов (или компонентов), например изменяя описание.",
+            "",
+            "Если такое изменение присутствует, в префиксе будет <color #355AA0>\uD83C\uDF0A</color> (или другой выбранный символ). Это сделано для различения причин изменений, поэтому выключать эту настройку не рекомендуется."
+          ]
+        },
+        "text_shadow": {
+          "@value": "Вкл. Тень Текста",
+          "desc": "Переключает тень текста для всех сообщений, отправляемых SkyOcean."
+        },
+        "prefix_gradient": {
+          "@value": "Градиент Префикса",
+          "desc": "Изменяет градиент, используемый для префикса."
+        },
+        "clickable_prefix": {
+          "@value": "Нажимаемый Префикс Сообщений",
+          "desc": "Делает префикс сообщений SkyOcean нажимаемым, открывая настройки."
+        },
+        "modify_indicator": {
+          "@value": "Индикатор Изменений SkyOcean",
+          "desc": [
+            "Предметы измененные или добавленные SkyOcean будут иметь индикатор (по стандарту <color #355AA0>\uD83C\uDF0A</color>) в имени.",
+            "Индикатор может быть изменен здесь."
+          ],
+          "prefix": "Префикс в имени",
+          "suffix": "Суффикс в имени",
+          "lore": "Первая строка в описании",
+          "nothing": "Без индикатора"
+        },
+        "debug": {
+          "@value": "Вкл. Режим Отладки",
+          "desc": [
+            "Включает несколько разных отладок по всему моду",
+            "<red>Может привести к вылетам или непредвиденному поведению!"
+          ]
+        }
+      },
+      "slayer": {
+        "@value": "Слеер",
+        "highlights": {
+          "blaze": {
+            "@value": "Подсветка Блейз Слеер",
+            "desc": "Подсвечивает блейз слеера в цвете настройки"
+          },
+          "own_boss": {
+            "@value": "Подсветка Собственных Боссов",
+            "desc": "Добавляет подсветку собственным боссам"
+          },
+          "minis": {
+            "@value": "Подсветка Мини-Боссов",
+            "desc": "Подсвечивает всех мини-боссов <red>красным</red> светом.",
+            "big_boys": {
+              "@value": "Подсветка Мини-Боссов Высокого Уровня",
+              "desc": "Подсвечивает высокоуровневых мини-боссов <dark_red>темно красным</dark_red>."
+            }
+          }
+        }
+      },
+      "mining": {
+        "@value": "Майнинг",
+        "modifyCommissions": {
+          "@value": "Изменяет Комиссии",
+          "desc": "Изменяет предмет комиссии в зависимости от завершенности."
+        },
+        "forge_reminder": {
+          "@value": "Напоминание Форджа",
+          "desc": "Отправляет напоминания, если у вас есть не забранные предметы в фордже."
+        },
+        "forge_reminder_delay": {
+          "@value": "Задержка Напоминаний Форджа",
+          "desc": "Задержка между напоминаниями в минутах."
+        },
+        "forge_reminder_action": {
+          "@value": "Подсказка Напоминаний Форджа",
+          "desc": "Какая подсказка будет показана когда таймер завершится.",
+          "warp": "Отправить к форджу",
+          "call_fred": "Позвонить Фреду",
+          "both": "Оба"
+        },
+        "forge_reminder_busy": {
+          "@value": "Не Напоминать О Фордже Когда Вы Заняты",
+          "desc": "Заняты означает что вы в забеге данжа, куудре, ..."
+        },
+        "retexture": {
+          "@value": "Замена Текстур",
+          "carpets": {
+            "@value": "Замена Текстур Ковров",
+            "desc": [
+              "Делает большинство ковров в дворвен шахтах <red>красными</red>, чтобы сделать их более заметными."
+            ]
+          },
+          "glacite": {
+            "@value": "Замена Текстур Блоков В Глэсайт Тунелях",
+            "desc": [
+              "Позволяет ресурс пакам изменять вид тангстина, амбера и блоков глэсайт тунелей."
+            ]
+          },
+          "mist": {
+            "@value": "Замена Текстур Миста",
+            "desc": [
+              "Позволяет ресурс пакам изменять вид блоков миста."
+            ]
+          },
+          "gemstone": {
+            "@value": "Замена Текстур Гемстоунов",
+            "desc": [
+              "Позволяет ресурс пакам менять вид гемстоунов."
+            ]
+          },
+          "hollows": {
+            "@value": "Замена Текстур Холлоус",
+            "desc": "Позволяет ресурс пакам менять вид большинства блоков хардстоуна и руд в кристал холлоус."
+          }
+        },
+        "mineshaft": {
+          "@value": "Шахты",
+          "pity_message": {
+            "@value": "Сообщение Пити",
+            "desc": "Отправляет текущее значение Пити когда вы находите шахту."
+          },
+          "announce": {
+            "@value": "Обьявлять О Входе В Шахту",
+            "desc": [
+              "Отправляет сообщение в чат или чат группы при входе в шахту",
+              "Сообщение будет отправлено в основной чат если вы не в группе."
+            ]
+          },
+          "announce-type": {
+            "@value": "Тип Обьявления",
+            "desc": "Тип сообщений отправляемых при входе в шахту."
+          },
+          "waypoint": {
+            "@value": "Места Трупов",
+            "desc": "Показывает точки во всех возможных местах трупов в шахте."
+          },
+          "show_title": {
+            "@value": "Показывать в Центре Экрана",
+            "desc": "Показывает титул в центре экрана в дополнение к обьявлению."
+          },
+          "key-announce": {
+            "@value": "Обьявление Ключей",
+            "desc": "Отправляет сообщение о количестве ключей, нужных в текущей шахте, в мешках."
+          }
+        },
+        "scatha": {
+          "@value": "Скейсы",
+          "wormAnnouncer": {
+            "@value": "Вкл. Обьявление Червей",
+            "desc": "Объявляет тип червя при спавне."
+          },
+          "wormCooldown": {
+            "@value": "Вкл. Уведомления О Кулдауне",
+            "desc": "Уведомляет когда вы можете заспавнить нового червя."
+          },
+          "wormPetMessage": {
+            "@value": "Добавить Редкость В Дроп Питомца",
+            "desc": "Добавляет редкость в сообщение о дропе питомца."
+          },
+          "wormPetTitle": {
+            "@value": "Вкл. Отображение Дропа Питомца",
+            "desc": "Сообщает о дропе питомца в центре экрана."
+          }
+        },
+        "hotm": {
+          "@value": "Изменение Перков Сердца Горы",
+          "shiftCost": {
+            "@value": "Показывать Стоимость Нажатия С Шифтом",
+            "desc": "Показывает стоимось при прокачке перка с нажатым шифтом."
+          },
+          "totalProgress": {
+            "@value": "Показывать Полный Прогресс",
+            "desc": "Показывает прогресс до максимальной прокачки перка."
+          },
+          "stackSize": {
+            "@value": "Показывать Уровень Как Количество",
+            "desc": "Показывает уровень перка как количество предмета."
+          },
+          "totalLeft": {
+            "@value": "Показывать Оставшемся Количестве",
+            "desc": "Показывает оставшееся количество, нужное для полной прокачки перка."
+          },
+          "reminder": {
+            "@value": "Напоминание",
+            "desc": "Добавляет напоминание когда вам хватает на прокачку перка."
+          },
+          "reminderTitle": {
+            "@value": "Показывать В Центре Экрана",
+            "desc": "Показывает напоминание в центре экрана."
+          }
+        },
+        "ch": {
+          "area_walls": {
+            "@value": "Стены Зон",
+            "desc": "Добавляет стены между зонами в кристал холлоус."
+          }
+        },
+        "puzzler": {
+          "@value": "Решатель Паззлера",
+          "desc": "Подсвечивает правильный блок для паззлера."
+        },
+        "metal_detector": {
+          "@value": "Решатель Детектора Металла",
+          "metalDetector": {
+            "@value": "Вкл. Решатель Детектора Металла",
+            "desc": "Решает детектор металла, что помогает вам находить сокровища в шахтах Дивана."
+          },
+          "playDingOnFind": {
+            "@value": "Проигрывать Звук При Находке",
+            "desc": "Проигрывает звук при находке сокровища."
+          },
+          "showTitleOnFind": {
+            "@value": "Показывать В Центре Экрана",
+            "desc": "Показывает в центре экрана когда вы находите сокровище."
+          }
+        }
+      },
+      "inventory": {
+        "@value": "Инвентарь",
+        "sack_value": {
+          "@value": "Стоимость Мешков",
+          "desc": "Показывает стоимость всех предметов в мешках.",
+          "edit": "Изменение Стоимости Мешков",
+          "alignment": {
+            "@value": "Выравнивание",
+            "desc": "Выравнивание элемента стоимости мешков."
+          },
+          "price_source": {
+            "@value": "Источник Цены",
+            "desc": "Источник который используется для цен предметов в мешках.",
+            "bazaar": "Базар",
+            "npc": "НПС"
+          },
+          "show_in_sack_of_sacks": {
+            "@value": "Показывать В Мешке Мешков",
+            "desc": "Показывает полную стоимость мешков в мешке мешков."
+          },
+          "hide_items_with_no_value": {
+            "@value": "Скрывать Предметы Без Цены",
+            "desc": "Скрывает предметы без цены из полной стоимости мешка."
+          },
+          "show_total_value": {
+            "@value": "Показывать Полную Цену",
+            "desc": "Показывает полную цену предметов в мешке."
+          }
+        },
+        "minion_helper": {
+          "@value": "Помощник С Миньонами",
+          "desc": "Показывает самые дешевый улучшения в меню \"Crafted Minions\"."
+        },
+        "inventory_buttons": {
+          "@value": "Кнопки Инвентаря",
+          "desc": "Настройки для изменения кнопок инвентаря.",
+          "enabled": {
+            "@value": "Кнопки Инвентаря",
+            "desc": "Показывание кнопок инвентаря."
+          },
+          "edit": {
+            "@value": "Изменить Кнопки",
+            "desc": [
+              "Изменить кнопки в отдельном меню.",
+              "<italic>Также доступно через <gray>/skyocean buttons</gray></italic>"
+            ]
+          }
+        },
+        "salvaging_helper": {
+          "@value": "Помощник утилизации",
+          "enabled": {
+            "@value": "Переключатель",
+            "desc": ""
+          },
+          "highlight": {
+            "@value": "Подсвечивать Предметы Не Пожертванные В Музей",
+            "desc": "Подсвечивает предметы которые можно пожертвовать в музей, которые еще не были пожертвованы, при утилизации."
+          },
+          "block_salvage": {
+            "@value": "Заблокировать Утилизацию Не Пожертвыванных Предметов",
+            "desc": "Блокирует утилизацию предметов, которые можно пожертвовать, но еще не были пожертвованы."
+          }
+        }
+      },
+      "chat": {
+        "@value": "Чат",
+        "profile_in_chat": {
+          "@value": "Профиль В Чате",
+          "desc": "Показывать Значок Профиля.",
+          "warning": "<yellow>SkyOcean по стандарту добавляет значок профиля в сообшения в чате, если вы хотите изменить это откройте настройки и ищите <gold>Профиль В Чате</gold>!"
+        },
+        "white_non_message": {
+          "@value": "Единый Цвет Сообщений Игроков",
+          "desc": "Изменяет цвет сообщений отправленных игроками без ранга на белый."
+        },
+        "piggy_repair_helper": {
+          "@value": "Помошник Починки Хрюшки",
+          "desc": "Отправляет сообщений для достования 8 зачарованной свинины из мешков когда хрюшка копилка ломается."
+        },
+        "sack_notification": {
+          "@value": "Уведомление Мешков",
+          "desc": "Показывает уведомление когда вы получаете выбранные предметы."
+        },
+        "sack_notification_items": {
+          "@value": "Предметы Для Уведомления Мешков",
+          "desc": "Предметы для которых показываются уведомления."
+        },
+        "reply_boop": {
+          "@value": "Ответный Boop",
+          "desc": [
+            "Добавляет <light_purple>/rboop</light_purple> комманду которая использует /boop на последнем человеке, написавшем вам.",
+            "<red>Требует изменение сервера чтобы вступить в силу.</red>"
+          ]
+        },
+        "hide_blazetekk": {
+          "@value": "Скрыть сообщения Blazetekk™ Ham Radio",
+          "desc": "Прячет сообщения статуса от Blazetekk™ Ham Radio."
+        },
+        "markdown_chat": {
+          "@value": "Разметка Чата",
+          "desc": [
+            "Разрешает форматирования чата простой Markdown разметкой.",
+            "",
+            "Это включает в себя:",
+            " - <green>*</green>курсив<green>*</green> для <pink><italic>курсивного</italic></pink> текста",
+            " - <green>**</green>выделенный<green>**</green> для <pink><bold>выделенного</bold></pink> текста",
+            " - <green>~~</green>вычеркнутый<green>~~</green> для <pink><strikethrough>вычеркнутого</strikethrough></pink> текста",
+            " - <green>__</green>подчеркнутый<green>__</green> для <pink><underline>подчеркнутого</underline></pink> текста",
+            " - <green>||</green>спрятаный<green>||</green> для <pink><obfuscated>спрятанного</obfuscated></pink> текста",
+            "",
+            "<red><bold>ВНИМАНИЕ:</bold> Может привести к конфликтам с некоторыми сообщениями!</red>"
+          ],
+          "underscore_italic": {
+            "@value": "Разрешить Подчеркивание Курсива",
+            "desc": [
+              "Расширяет Markdown разметку до следующего.",
+              "",
+              " - <green>_</green>курсив<green>_</green> для <pink><italic>курсивного</italic></pink> текста",
+              "",
+              "<red><bold>ВНИМАНИЕ:</bold> Может привести к конфликтам с некоторыми именами и сообщениями!</red>"
+            ]
+          }
+        }
+      },
+      "garden": {
+        "@value": "Сад",
+        "pest_bait_type": {
+          "@value": "Тип Приманки Насекомых - Нажмите на текст чтобы взять из мешков!",
+          "desc": "Добавляет элемент интерфейса, который показывает какой тип приманки увелчивает шанс заспавнить определенное насекомое."
+        },
+        "pest_bait_alignment": {
+          "@value": "Выравнивание Приманки Насекомых",
+          "desc": "Выравнивание элемента приманки насекомых."
+        },
+        "desk_pest_highlight": {
+          "@value": "Подсвечивание Насекомых Доски",
+          "desc": "Подсвечивает участок на котором есть насекомые и их количество в меню 'Confugure Plots'."
+        },
+        "pest_warning": {
+          "@value": "Предупреждение О Насекомых",
+          "desc": "Предупреждает о достижении настроенного количества насекомых пока вы фармите."
+        },
+        "pest_warning_amount": {
+          "@value": "Минимальное Кол-во Насекомых Для Предупреждения",
+          "desc": [
+            "Минимальное количество насекомых, нужное для срабатывания предупреждения.",
+            "При выборе (Автоматически), предупреждение срабатывает только при понижении <gold>☘</gold>"
+          ],
+          "options": {
+            "auto": "Автоматически",
+            "one": "1",
+            "two": "2",
+            "three": "3",
+            "four": "4",
+            "five": "5",
+            "six": "6",
+            "seven": "7",
+            "eight": "8"
+          }
+        },
+        "pest_warning_delay": {
+          "@value": "Задержка Предупреждения О Насекомых.",
+          "desc": "Задержка между напоминаниями в секундах."
+        },
+        "crop_fever_effect": {
+          "@value": "Эффект Кроп Фивера",
+          "desc": "Добавляет множество визуальных эффектов для Кроп Фивера.",
+          "config_title": {
+            "@value": "Конфигурация Кроп Фивера"
+          },
+          "enabled": {
+            "@value": "Переключатель",
+            "desc": "Включает всю функцию."
+          },
+          "sound_section": {
+            "@value": "Изменение Звуков",
+            "desc": "",
+            "startingSound": {
+              "@value": "Звук Джекпота",
+              "desc": "Проигрывает звук джекпота при начале Кроп Фивера."
+            },
+            "rngSound": {
+              "@value": "Звук РНГ",
+              "desc": "Проигрывает звук при дропе редкого предмета (например, Ray of Helios или Strawberry Dye)."
+            },
+            "backgroundMusic": {
+              "@value": "Фоновоя Музыка",
+              "desc": [
+                "Играет цикличную музыку когда Кроп Фивер активен.",
+                "<red>Отключите, если у вас включена музыка Hypixel!</red>"
+              ]
+            },
+            "useRegularSounds": {
+              "@value": "Использовать .ogg Файлы.",
+              "desc": [
+                "Использует .ogg файлы вместо .nbs файлов",
+                "Чтобы изменить замените файлы в assets/skyocean/sounds/ogg/garden",
+                "<red>Используйте только если у вас есть ресурс пак заменяющий .ogg файлы, иначе вы не услышите звук!</red>"
+              ]
+            }
+          },
+          "visual_section": {
+            "@value": "Визуальные Изменения",
+            "desc": "",
+            "hueShiftingShader": {
+              "@value": "Эффект Переливания Цвета",
+              "desc": "Добавляет эффект переливания цвета на весь экран когда Кроп фивер активен.",
+              "shiftingSpeed": {
+                "@value": "Скорость Переливания",
+                "desc": [
+                  "Изменяет скорость с которой переливаются цвета.",
+                  "<red>Если вы чувствительны к мигающим цветам не используюте значения выше <color #B22222>❬<color #727378>Стандартный</color>❭!</red>"
+                ],
+                "options": {
+                  "slower": "<color #5F9EA0>Медленнее (0.25x)</color>",
+                  "slow": "<color #708587>Медленный (0.5x)</color>",
+                  "normal": "<color #727378>Стандартный (1.0x)</color>",
+                  "fast": "<color #915454>Быстрый (1.5x)</color>",
+                  "faster": "<color #A13B3B>Быстрее (2.5x)</color>",
+                  "insane": "<color #B22222>Безумие (10.0x)</color>"
+                }
+              }
+            },
+            "coinRain": {
+              "@value": "Денежный Дождь",
+              "desc": "Показывает анимацию денег SkyBlock падающих с верху экрана когда Кроп Фивер активен.",
+              "duration": {
+                "@value": "Продолжительность Денежного Дождя",
+                "desc": "Продолжительность анимации денежного дождя."
+              },
+              "spawnMultiplier": {
+                "@value": "Мультипликатор Появления Денежного Дождя",
+                "desc": "Изменяет сколько денег появляются за тик.",
+                "options": {
+                  "auto": "Автоматически",
+                  "one": "1x",
+                  "two": "2x",
+                  "three": "3x",
+                  "four": "4x",
+                  "five": "5x",
+                  "ten": "10x",
+                  "fifteen": "15x",
+                  "twenty": "20x"
+                }
+              }
+            }
+          },
+          "credits": {
+            "@value": "Credits",
+            "desc": "Фоновая музыка взята из <hover 'Нажмите чтобы посетить их сайт'><url 'https://noteblock.world'><color #6294FD>noteblock.world:</color></url></hover> <hover 'Нажмите чтобы посетить сайт песни'><url 'https://noteblock.world/song/bGGNXKGUKP'><color #4AE84A>Invincibility Theme - Super Mario Bros. by Sandriix701</color></url></hover>"
+          }
+        }
+      },
+      "misc": {
+        "@value": "Разное",
+        "ministerInCalendar": {
+          "@value": "Министер В Календаре",
+          "desc": "Добавляет текушего министра рядом с мэром в календаре."
+        },
+        "anvilHelper": {
+          "@value": "Помошник Наковальни",
+          "desc": "Подсвечивает книги с тем же зачарованием как та в наковальне."
+        },
+        "itemStarStacksize": {
+          "@value": "Колличество Звезд Предмета",
+          "desc": "Показывает звезды предмета как колличество предметов."
+        },
+        "revertMasterStars": {
+          "@value": "Вернуть Мастер Звезды",
+          "desc": "Возвращает Мастер Звезды назад к виду цветных звезд."
+        },
+        "quickJoinButton": {
+          "@value": "Кнопка Быстрого Присоединения",
+          "desc": "Быстро подключает к серверу, сохраняя одно нажатее."
+        },
+        "quickJoinText": {
+          "@value": "Текст Кнопки Быстрого Подключения",
+          "desc": "Текст на кнопке быстрого подключения, используйте {ip} для ip адресса."
+        },
+        "quickJoinIp": {
+          "@value": "IP Адресс Быстрого Подключения",
+          "desc": "Меняет к какому серверу быстро подключаться."
+        },
+        "previousServer": {
+          "@value": "Прошлый Сервер",
+          "desc": "Отправляет сообщение в чат когда вы подключаетесь к серверу на котором вы были в прошлом."
+        },
+        "previousServerTime": {
+          "@value": "Время Прошлого Сервера",
+          "desc": "The time a server is cached and shows up as previously joined."
+        },
+        "hideLightning": {
+          "@value": "Спрятать Молнию",
+          "desc": "Скрывает молнию и эффект от неё."
+        },
+        "fullTextShadow": {
+          "@value": "Полная Тень Текста",
+          "desc": [
+            "Рендерит тень текста как \"полная\" полностью вокруг всего глифа.",
+            "",
+            "<red>Может сильно влиять на производительность!</red>"
+          ]
+        },
+        "showHiddenPetCandy": {
+          "@value": "Показывать Скрытые Конфеты Питомцев",
+          "desc": "Hypixel скрывает конфеты питомцев когда они достигают максимального уровня, эта фича добавляет эту линию обратно."
+        },
+        "totemAnimation": {
+          "@value": "Анимация Тотема",
+          "desc": "Проигрывает анимацию Тотема Бессмертия когда предмет неуязвимости (например, Маска Бонзо) использован."
+        },
+        "islandCloudHider": {
+          "@value": "Скрывать Облака На Островах",
+          "desc": [
+            "Укажите, на каких островах облака не должны рендериться.",
+            "Полезно в Шахтах Дварфов, где облака могут быть надоедливыми."
+          ],
+          "warning": "<yellow>SkyOcean скрывает облака на этом острове изначально, если Вы хотите изменить это - откройте найстройки и ищите <gold>Скрывать Облака На Островах</gold>!"
+        },
+        "netherFogDarkening": {
+          "@value": "Nether Fog Darkening",
+          "desc": "Darkens the Crimson Isle sky. Only has an effect with Night Vision.",
+          "warning": "<yellow>SkyOcean now darkens Crimson Isle's sky! You can disable it in the misc config by searching <gold>Nether Fog Darkening</gold>."
+        },
+        "netherFogScale": {
+          "@value": "Nether Fog Scale",
+          "desc": [
+            "How bright the Crimson Isle sky should be.",
+            "<yellow>Requires Nether Fog Darkening to be enabled!</yellow>"
+          ]
+        },
+        "customization_vanilla_integration": {
+          "@value": "Animate dyes and skins in inventories",
+          "desc": [
+            "Will always animate dyed armors and helmet skins even in inventories or menus.",
+            "",
+            "<yellow>(Doesn't currently work with skins that allow variant selection or pets)</yellow>"
+          ]
+        },
+        "queueEstimation": {
+          "@value": "Queue Estimation",
+          "desc": "Estimates your alpha/main server queue time based on the current queue size and average queue speed."
+        },
+        "hideEntityFire": {
+          "@value": "Hide entity fire",
+          "desc": "Removes the fire effect from all entities."
+        },
+        "hideImplosions": {
+          "@value": "Hide Implosion Particles",
+          "desc": "Removes the wither blade implosion particles."
+        },
+        "itemSearch": {
+          "@value": "Item Search",
+          "desc": "Item Search is a feature that allows you to search for items in your inventory, backpacks, storage, sacks, island chests and more.",
+          "itemHighlight": {
+            "@value": "Item Highlight",
+            "desc": "Choose what color the searched item will be highlighted with."
+          },
+          "highlightMode": {
+            "@value": "Highlight Mode",
+            "desc": "Choose how items will be highlighted."
+          },
+          "highlightTime": {
+            "@value": "Highlight Time",
+            "desc": "Amount of time that items will be highlighted for, in seconds."
+          },
+          "useReiSearchBar": {
+            "@value": "Use REI Search Bar",
+            "desc": "Replaces REI's inventory highlighting with SkyOcean's"
+          },
+          "preserve_search": {
+            "@value": "Preserve Search",
+            "desc": "When reopening the item search, it will keep the previous search input and category instead of clearing them."
+          },
+          "museumIntegration": {
+            "@value": "Museum integration",
+            "desc": "Changes the museum to highlight items that are found on your profile, furthermore it also tells you which items you can craft and which ones are not craftable at all."
+          },
+          "warp_to_island": {
+            "@value": "Warp to island",
+            "desc": "Automatically warp to island if you click an item that is on it."
+          }
+        },
+        "museumArmourPieces": {
+          "@value": "Show museum armour pieces",
+          "desc": "Displays all pieces required to finish an armor set in the tooltip in the museum."
+        },
+        "ratHitbox": {
+          "@value": "Rat hitboxes",
+          "desc": "Renders extra hitboxes for rats in the hub."
+        },
+        "stereoPantsMute": {
+          "@value": "Mutes Stereo Pants Music",
+          "desc": "Mutes the sometimes really annoying music that plays from Players wearing Stereo Pants."
+        },
+        "crafthelper": {
+          "@value": "Craft Helper",
+          "desc": [
+            "Craft helper is a feature that lets you see all the steps in a recipe and how much progress you have made towards completing it.",
+            "",
+            "<gray>Pro Tip:</gray> You can also import SkyShard Trees into your CraftHelper by pressing <gray>\"Copy Tree\"</gray>, then <gray>\"SkyOcean Format\"</gray> on the Website and running <gray>/skyocean recipe skyshards</gray> in-game!"
+          ],
+          "enabled": {
+            "@value": "Enable Craft Helper",
+            "desc": "Whether the craft helper is enabled or not, this is the main switch."
+          },
+          "quick_set": {
+            "@value": "Quick Set Crafthelper Item",
+            "desc": "Adds a clickable item into multiple different screens like recipe, forge, visitors, ... to quickly add the item into the crafthelper."
+          },
+          "hideCompleted": {
+            "@value": "Hide completed",
+            "desc": "Whether to hide completed parts of the tree or not."
+          },
+          "parentAmount": {
+            "@value": "Add parent amount",
+            "desc": "Includes the amount that is already present through parents."
+          },
+          "disableRootItems": {
+            "@value": "Disable tracking for target",
+            "desc": "Prevents the craft helper from showing any progress for the root node, making it simpler for certain items."
+          },
+          "disallowedItemSources": {
+            "@value": "Disallowed item sources",
+            "desc": "Select sources from which the craft helper will ignore."
+          },
+          "position": {
+            "@value": "Position",
+            "desc": "Craft helper position inside the inventory.",
+            "top_left": "Top Left",
+            "top_right": "Top Right",
+            "bottom_left": "Bottom Left",
+            "bottom_right": "Bottom Right",
+            "left_of_inventory": "Left of Inventory",
+            "right_of_inventory": "Right of Inventory"
+          },
+          "margin": {
+            "@value": "Margin",
+            "desc": "How much space to leave between the inventory/screen edges and the craft helper element."
+          },
+          "done_notifications": {
+            "@value": "Done Notifications",
+            "desc": "Notification types for when your CraftHelper tree is craftable.",
+            "types": {
+              "@value": "Notification Types",
+              "desc": "The types of notifications you want to receive when your CraftHelper tree is craftable."
+            },
+            "sound_event": {
+              "@value": "Done Sound",
+              "desc": "The sound you will hear when your Item becomes craftable."
+            },
+            "notification_type": {
+              "@value": "Notification Type",
+              "done_message": "Done Message",
+              "done_title": "Done Title",
+              "done_sound": "Done Sound"
+            }
+          },
+          "tree_formatter": {
+            "@value": "Craft helper formatter",
+            "desc": "Changes the appearance of the craft helper tree.",
+            "raw": "Raw",
+            "tree": "Tree"
+          },
+          "raw_formatter_hide_completed": {
+            "@value": "Hide completed elements",
+            "desc": "Hides completed elements from the raw formatter, <yellow>also applies to the hud element!"
+          },
+          "enable_hud_overlay": {
+            "@value": "Enable HUD overlay",
+            "desc": "Shows the progress to finishing the recipe on screen."
+          },
+          "overlay_background": {
+            "@value": "Enable overlay background",
+            "desc": "Adds a background behind the overlay to make it more readable."
+          },
+          "transformers": {
+            "@value": "Tree transformers",
+            "desc": "The following settings will alter the recipe tree in different ways, letting you customize the appearance and complexity.",
+            "compacted_cutoff_degree": {
+              "@value": "Compacted Cutoff Degree",
+              "desc": [
+                "Removes raw resources of the Nth degree from the tree",
+                "",
+                "For example if it's set to 1, Flawed Ruby will be the final node rather then having Rough as child,",
+                "if set to 2 Fine Ruby would be the final node, and so on..."
+              ]
+            }
+          }
+        },
+        "transparentArmor": {
+          "@value": "Transparent Armour",
+          "desc": [
+            "Settings to change the appearance of armours on either yourself or others.",
+            {
+              "@id": "transparency"
+            },
+            "<italic>Does not apply to npcs.</italic>"
+          ],
+          "self": {
+            "@value": "Self",
+            "desc": "Only applies to your armour."
+          },
+          "others": {
+            "@value": "Others",
+            "desc": "Only applies to other players."
+          }
+        },
+        "mob_icons": {
+          "@value": "Mob Icons",
+          "enabled": {
+            "@value": "Enable Mob Icons",
+            "desc": [
+              "Replaces the hypixel mob icons with a spelled out version.",
+              "<red>This requires a nametag update, meaning it doesn't refresh instantly!</red>"
+            ]
+          },
+          "display_type": {
+            "@value": "Display type",
+            "desc": "Changes the way the mob icons are displayed."
+          },
+          "colors": {
+            "@value": "Individual colors",
+            "desc": [
+              "Overwrites the colors for the different mob icons.",
+              "The default <white>#FFFFFF</white> means that it doesn't get changed at all."
+            ]
+          }
+        },
+        "fun": {
+          "@value": "Fun",
+          "player_animals": {
+            "@value": "Player Animals",
+            "desc": [
+              "Changes players in the world to be rendered as the selected animal!",
+              "You can choose between <white>Nobody</white>, <white>Self</white>, <white>Players (non NPCs)</white> and <white>Everyone</white>."
+            ],
+            "type": {
+              "@value": "Animal Type",
+              "desc": "The animal to use as substitution for players."
+            },
+            "config": {
+              "@value": "Animal Settings",
+              "desc": "Allows you to modify the appearance of an animal, if supported!",
+              "own_collar": {
+                "@value": "Own Collar Color",
+                "desc": "The collar color used for yourself."
+              },
+              "other_collar": {
+                "@value": "Other Collar Color",
+                "desc": "The collar color used for others."
+              },
+              "own_baby": {
+                "@value": "Is Own Baby",
+                "desc": [
+                  "Whether to use a baby model for yourself.",
+                  "<yellow>This might cause rendering issues on some models!"
+                ]
+              },
+              "other_baby": {
+                "@value": "Are Others Baby",
+                "desc": [
+                  "Whether to use a baby model for others.",
+                  "<yellow>This might cause rendering issues on some models!"
+                ]
+              }
+            },
+            "cat": {
+              "own_variant": {
+                "@value": "Own Cat Variant",
+                "desc": "Changes the cat variant used for yourself."
+              },
+              "other_variant": {
+                "@value": "Other Cat Variant",
+                "desc": "Changes the cat variant used for others."
+              },
+              "variant": {
+                "default": "Random",
+                "tabby": "Tabby",
+                "black": "Black",
+                "red": "Red",
+                "siamese": "Siamese",
+                "british_shorthair": "British Shorthair",
+                "calico": "Calico",
+                "persian": "Persian",
+                "ragdoll": "Ragdoll",
+                "white": "White",
+                "jellie": "Jellie",
+                "all_black": "All Black"
+              }
+            },
+            "fox": {
+              "own_variant": {
+                "@value": "Own Fox Variant",
+                "desc": "Changes the fox variant used for yourself."
+              },
+              "other_variant": {
+                "@value": "Other Fox Variant",
+                "desc": "Changes the fox variant used for others."
+              },
+              "variant": {
+                "random": "Random",
+                "red": "Red",
+                "snow": "Snow"
+              },
+              "own_eepy": {
+                "@value": "Own Eepy",
+                "desc": "zzzZZzzZ"
+              },
+              "other_eepy": {
+                "@value": "Other Eepy",
+                "desc": "zzzZZzzZ"
+              },
+              "own_sleep_delay": {
+                "@value": "Own Sleep Delay",
+                "desc": "Delay before eep zzZZz..."
+              },
+              "other_sleep_delay": {
+                "@value": "Other Sleep Delay",
+                "desc": "Delay before eep zzZZz..."
+              }
+            },
+            "wolf": {
+              "own_variant": {
+                "@value": "Own Wolf Variant",
+                "desc": "Changes the wolf variant used for yourself."
+              },
+              "other_variant": {
+                "@value": "Other Wolf Variant",
+                "desc": "Changes the wolf variant used for others."
+              },
+              "own_state": {
+                "@value": "Own Wolf State",
+                "desc": "Changes the wolf state used for yourself."
+              },
+              "other_state": {
+                "@value": "Other Wolf State",
+                "desc": "Changes the wolf state used for others."
+              },
+              "variant": {
+                "random": "Random",
+                "pale": "Pale",
+                "spotted": "Spotted",
+                "snowy": "Snowy",
+                "black": "Black",
+                "ashen": "Ashen",
+                "rusty": "Rusty",
+                "woods": "Woods",
+                "chestnut": "Chestnut",
+                "striped": "Striped"
+              },
+              "state": {
+                "random": "Random",
+                "tame": "Tame",
+                "wild": "Wild",
+                "angry": "Angry"
+              }
+            },
+            "horse": {
+              "own_color": {
+                "@value": "Own Horse Color",
+                "desc": "Changes the horse color used for yourself."
+              },
+              "other_color": {
+                "@value": "Other Horse Color",
+                "desc": "Changes the horse color used for others."
+              },
+              "own_marking": {
+                "@value": "Own Horse Markings",
+                "desc": "Changes the horse markings used for yourself."
+              },
+              "other_marking": {
+                "@value": "Other Horse Markings",
+                "desc": "Changes the horse markings used for others."
+              },
+              "color": {
+                "random": "Random",
+                "white": "White",
+                "creamy": "Creamy",
+                "chestnut": "Chestnut",
+                "brown": "Brown",
+                "black": "Black",
+                "gray": "Gray",
+                "dark_brown": "Dark Brown"
+              },
+              "marking": {
+                "random": "Random",
+                "none": "None",
+                "white": "White",
+                "white_field": "White Field",
+                "white_dots": "White Dots",
+                "black_dots": "Black Dots"
+              }
+            },
+            "axolotl": {
+              "own_variant": {
+                "@value": "Own Axolotl Variant",
+                "desc": "Changes the axolotl variant that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Axolotl Variant",
+                "desc": "Changes the axolotl variant that is used for others!"
+              },
+              "variant": {
+                "random": "Random",
+                "lucy": "Pink",
+                "wild": "Brown",
+                "gold": "Gold",
+                "cyan": "Cyan",
+                "blue": "Blue"
+              }
+            },
+            "chicken": {
+              "own_variant": {
+                "@value": "Own Chicken Variant",
+                "desc": "Changes the chicken variant that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Chicken Variant",
+                "desc": "Changes the chicken variant that is used for others!"
+              },
+              "variant": {
+                "random": "Random",
+                "temperate": "Temperate",
+                "warm": "Warm",
+                "cold": "Cold"
+              }
+            },
+            "copper_golem": {
+              "own_variant": {
+                "@value": "Own Copper Golem Weathering State",
+                "desc": "Changes the copper golem weathering state that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Copper Golem Weathering State",
+                "desc": "Changes the copper golem weathering state that is used for others!"
+              },
+              "own_block": {
+                "@value": "Own Copper Golem Antenna Block",
+                "desc": "Changes the copper golem antenna block that is used for yourself!"
+              },
+              "other_block": {
+                "@value": "Other Copper Golem Antenna Block",
+                "desc": "Changes the copper golem antenna block that is used for others!"
+              },
+              "state": {
+                "random": "Random",
+                "unaffected": "Unaffected",
+                "exposed": "Exposed",
+                "weathered": "Weathered",
+                "oxidized": "Oxidized"
+              }
+            },
+            "cow": {
+              "own_variant": {
+                "@value": "Own Cow Variant",
+                "desc": "Changes the cow variant that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Cow Variant",
+                "desc": "Changes the cow variant that is used for others!"
+              },
+              "variant": {
+                "random": "Random",
+                "temperate": "Temperate",
+                "warm": "Warm",
+                "cold": "Cold"
+              }
+            },
+            "frog": {
+              "own_variant": {
+                "@value": "Own Frog Variant",
+                "desc": "Changes the frog variant used for yourself."
+              },
+              "other_variant": {
+                "@value": "Other Frog Variant",
+                "desc": "Changes the frog variant used for others."
+              },
+              "variant": {
+                "random": "Random",
+                "temperate": "Temperate",
+                "warm": "Warm",
+                "cold": "Cold"
+              }
+            },
+            "mooshroom": {
+              "own_variant": {
+                "@value": "Own Mooshroom Cow Variant",
+                "desc": "Changes the mooshroom variant used for yourself."
+              },
+              "other_variant": {
+                "@value": "Other Mooshroom Cow Variant",
+                "desc": "Changes the mooshroom variant used for others."
+              },
+              "variant": {
+                "random": "Random",
+                "red": "Red",
+                "brown": "Brown"
+              }
+            },
+            "parrot": {
+              "own_variant": {
+                "@value": "Own Parrot Variant",
+                "desc": "Changes the parrot variant that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Parrot Variant",
+                "desc": "Changes the parrot variant that is used for others!"
+              },
+              "variant": {
+                "random": "Random",
+                "red_blue": "Red Blue",
+                "blue": "Blue",
+                "green": "Green",
+                "yellow_blue": "Yellow Blue",
+                "gray": "Gray"
+              }
+            },
+            "pig": {
+              "own_variant": {
+                "@value": "Own Pig Variant",
+                "desc": "Changes the pig variant that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Pig Variant",
+                "desc": "Changes the pig variant that is used for others!"
+              },
+              "variant": {
+                "random": "Random",
+                "temperate": "Temperate",
+                "warm": "Warm",
+                "cold": "Cold"
+              }
+            },
+            "rabbit": {
+              "own_variant": {
+                "@value": "Own Rabbit Variant",
+                "desc": "Changes the rabbit variant that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Rabbit Variant",
+                "desc": "Changes the rabbit variant that is used for others!"
+              },
+              "variant": {
+                "random": "Random",
+                "brown": "Brown",
+                "white": "White",
+                "black": "Black",
+                "white_splotched": "White Splotched",
+                "gold": "Gold",
+                "salt": "Salt",
+                "evil": "Evil >:3"
+              }
+            },
+            "salmon": {
+              "own_variant": {
+                "@value": "Own Salmon Variant",
+                "desc": "Changes the salmon variant that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Salmon Variant",
+                "desc": "Changes the salmon variant that is used for others!"
+              },
+              "variant": {
+                "random": "Random",
+                "small": "Small",
+                "medium": "Medium",
+                "large": "Large"
+              }
+            },
+            "snow_golem": {
+              "own_pumpkin": {
+                "@value": "Own Snow Golem Pumpkin State",
+                "desc": "Changes the snow golem’s pumpkin state for yourself."
+              },
+              "other_pumpkin": {
+                "@value": "Other Snow Golem Pumpkin State",
+                "desc": "Changes the snow golem’s pumpkin state for others."
+              }
+            },
+            "sheep": {
+              "own_color": {
+                "@value": "Own Sheep Color",
+                "desc": "Changes the sheep color used for yourself."
+              },
+              "other_color": {
+                "@value": "Other Sheep Color",
+                "desc": "Changes the sheep color used for others."
+              },
+              "own_jeb": {
+                "@value": "Own Jeb",
+                "desc": "Whether you are a jeb_ sheep."
+              },
+              "other_jeb": {
+                "@value": "Other Jeb",
+                "desc": "Whether others are jeb_ sheep."
+              },
+              "own_sheared": {
+                "@value": "Own Sheared",
+                "desc": "Whether you are sheared."
+              },
+              "other_sheared": {
+                "@value": "Other Sheared",
+                "desc": "Whether others are sheared."
+              }
+            },
+            "tropical_fish": {
+              "own_pattern": {
+                "@value": "Own Tropical Fish Pattern",
+                "desc": "Changes the tropical fish pattern that is used for yourself!"
+              },
+              "other_pattern": {
+                "@value": "Other Tropical Fish Pattern",
+                "desc": "Changes the tropical fish pattern that is used for others!"
+              },
+              "pattern": {
+                "random": "Random",
+                "kob": "Kob",
+                "sunstreak": "Sunstreak",
+                "snooper": "Snooper",
+                "dasher": "Dasher",
+                "brinely": "Brinely",
+                "spotty": "Spotty",
+                "flopper": "Flopper",
+                "stripey": "Stripey",
+                "glitter": "Glitter",
+                "blockfish": "Blockfish",
+                "betty": "Betty",
+                "clayfish": "Clayfish"
+              }
+            },
+            "villager": {
+              "own_type": {
+                "@value": "Own Villager Type",
+                "desc": "Changes the villager type that is used for yourself!"
+              },
+              "other_type": {
+                "@value": "Other Villager Type",
+                "desc": "Changes the villager type that is used for others!"
+              },
+              "own_profession": {
+                "@value": "Own Villager Profession",
+                "desc": "Changes the villager profession that is used for yourself!"
+              },
+              "other_profession": {
+                "@value": "Other Villager Profession",
+                "desc": "Changes the villager profession that is used for others!"
+              },
+              "type": {
+                "random": "Random",
+                "desert": "Desert",
+                "jungle": "Jungle",
+                "plains": "Plains",
+                "savanna": "Savanna",
+                "snow": "Snow",
+                "swamp": "Swamp",
+                "taiga": "Taiga"
+              }
+            },
+            "iron_golem": {
+              "own_state": {
+                "@value": "Own Iron Golem Crackiness",
+                "desc": "Changes the iron golem crackiness that is used for yourself!"
+              },
+              "other_state": {
+                "@value": "Other Iron Golem Crackiness",
+                "desc": "Changes the iron golem crackiness that is used for others!"
+              },
+              "state": {
+                "random": "Random",
+                "none": "None",
+                "low": "Low",
+                "medium": "Medium",
+                "high": "High"
+              }
+            },
+            "llama": {
+              "own_variant": {
+                "@value": "Own Llama Variant",
+                "desc": "Changes the llama variant that is used for yourself!"
+              },
+              "other_variant": {
+                "@value": "Other Llama Variant",
+                "desc": "Changes the llama variant that is used for others!"
+              },
+              "own_trader": {
+                "@value": "Is Own Llama Trader",
+                "desc": "Whether the own llama is a trader llama or not!"
+              },
+              "other_trader": {
+                "@value": "Other Llama Trader",
+                "desc": "Whether other llamas are trader llamas or not!"
+              },
+              "variant": {
+                "random": "Random",
+                "creamy": "Creamy",
+                "white": "White",
+                "brown": "Brown",
+                "gray": "Gray"
+              }
+            },
+            "panda": {
+              "own_gene": {
+                "@value": "Own Panda Gene",
+                "desc": "Changes the panda gene that is used for yourself!"
+              },
+              "other_gene": {
+                "@value": "Other Panda Gene",
+                "desc": "Changes the panda gene that is used for others!"
+              },
+              "gene": {
+                "random": "Random",
+                "normal": "Normal",
+                "lazy": "Lazy",
+                "worried": "Worried",
+                "playful": "Playful",
+                "brown": "Brown",
+                "weak": "Weak",
+                "aggressive": "Aggressive"
+              }
+            },
+            "bogged": {
+              "own_sheared": {
+                "@value": "Own Sheared",
+                "desc": "Whether you are sheared."
+              },
+              "other_sheared": {
+                "@value": "Other Sheared",
+                "desc": "Whether others are sheared."
+              }
+            },
+            "shulker": {
+              "own_color": {
+                "@value": "Own Shulker Color",
+                "desc": "Changes the shulker color that is used for yourself!"
+              },
+              "other_color": {
+                "@value": "Other Shulker Color",
+                "desc": "Changes the shulker color that is used for others!"
+              }
+            },
+            "happy_ghast": {
+              "own_harness": {
+                "@value": "Own Harness Color",
+                "desc": "Changes the harness color that is used for yourself!"
+              },
+              "other_harness": {
+                "@value": "Other Harness Color",
+                "desc": "Changes the harness color that is used for others!"
+              }
+            },
+            "random": "Random",
+            "boolean_state": {
+              "random": "Random",
+              "always": "Always",
+              "never": "Never"
+            },
+            "state": {
+              "none": "Nobody",
+              "self": "Self",
+              "players": "Players",
+              "everyone": "Everyone"
+            },
+            "color": {
+              "default": "Random",
+              "random": "Random",
+              "none": "None",
+              "white": "<white>White",
+              "orange": "<#f5a97f>Orange",
+              "magenta": "<#ff00ff>Magenta",
+              "light_blue": "<#90d5ff>Light Blue",
+              "yellow": "<yellow>Yellow",
+              "lime": "<green>Lime",
+              "pink": "<pink>Pink",
+              "gray": "<dark_gray>Gray",
+              "light_gray": "<light_gray>Light Gray",
+              "cyan": "<#00ffff>Cyan",
+              "purple": "<purple>Purple",
+              "blue": "<blue>Blue",
+              "brown": "<#964B00>Brown",
+              "green": "<green>Green",
+              "red": "<red>Red",
+              "black": "<black>Black"
+            },
+            "entity_overwrite": {
+              "desc": [
+                "Changes the entity that is used (by default cats).",
+                "<italic><white>Note that settings like variant and collar won’t work for non-cat models!</white></italic>"
+              ]
+            },
+            "outside_skyblock": {
+              "@value": "Outside SkyBlock",
+              "desc": "Whether player animals should also be visible outside of SkyBlock."
+            }
+          }
+        }
+      },
+      "fishing": {
+        "@value": "Fishing",
+        "trophy_numbers": {
+          "@value": "Trophy Numbers",
+          "desc": "Displays the amount of trophy fishes you caught upon catching one."
+        },
+        "hook_text_scale_toggle": {
+          "@value": "Toggle Hook Text Scale",
+          "desc": "Whether to enable the hook text scaling or not."
+        },
+        "hook_text_scale": {
+          "@value": "Hook Text Scale",
+          "desc": "Changes the scale of the text above your fishing hook/bobber."
+        },
+        "lava_replacement": {
+          "@value": "Lava Replacement",
+          "desc": "Replaces the lava texture with the water texture while in the Crimson Isle."
+        },
+        "bobber_fix": {
+          "@value": "Bobber Fix",
+          "desc": "Fixes bobbers rubberbanding when fishing."
+        },
+        "bobber_time": {
+          "@value": "Bobber Time",
+          "desc": "Shows the time your bobber has existed."
+        },
+        "hide_other_bobbers": {
+          "@value": "Hide Other Bobbers",
+          "desc": "Hides other players' bobbers, making it easier to see your own."
+        },
+        "hotspot": {
+          "@value": "Hotspot Features",
+          "desc": "All settings for the hotspot Features.",
+          "warning": {
+            "@value": "Warning",
+            "desc": "Sends a chat warning when a hotspot you recently fished at disappears."
+          },
+          "highlight": "Highlight",
+          "circle_surface": {
+            "@value": "Surface",
+            "desc": "Render a \"solid\" circle for hotspots."
+          },
+          "surface_transparency": {
+            "@value": "Surface Transparency",
+            "desc": [
+              "Changes the transparency of the surface.",
+              {
+                "@id": "transparency"
+              }
+            ]
+          },
+          "circle_outline": {
+            "@value": "Outline",
+            "desc": "Render a \"solid\" outline for hotspots."
+          },
+          "outline_transparency": {
+            "@value": "Outline Transparency",
+            "desc": [
+              "Changes the transparency of the outline.",
+              {
+                "@id": "transparency"
+              }
+            ]
+          },
+          "hide_particles": {
+            "@value": "Hide Particles",
+            "desc": "Hide hotspot particles (requires Highlight or Outline to be enabled)."
+          }
+        }
+      },
+      "lore_modifiers": {
+        "@value": "Lore Modifiers",
+        "modifications": {
+          "@value": "Lore Modifications",
+          "desc": [
+            "All items that have any modification present in the lore are indicated with the selected modify indicator.",
+            "To list all modifications that are present press <gray>shift</gray>.",
+            "",
+            "Some of the settings may include examples, <italic><gray>hover</gray></italic> them to see them."
+          ]
+        },
+        "drill_modifications": {
+          "@value": "Compact drill modifications",
+          "desc": [
+            "Compacts the installed upgrade parts into one line each.",
+            "",
+            "Example: <green><hover show_text '<color #355AA0>\uD83C\uDF0A</color><aqua> Heated Divans Drill</aqua>",
+            "<dark_gray>Breaking Power 10</dark_gray>",
+            "",
+            "<gray>Damage: <red>+75</red></gray>",
+            "<gray>Mining Speed: <green>+7,320</green> <gold>[+500]</gold> <blue>[+50] (+70)</blue> <light_purple>(+240)</light_purple></gray>",
+            "<gray>Pristine: <green>+4.7</green> <light_purple>(+2.2)</light_purple></gray>",
+            "<gray>Mining Fortune: <green>+340</green> <blue>[+5] (+25)</blue> <light_purple>(+120)</light_purple></gray>",
+            "<gray>Gemstone Fortune: <green>+50</green></gray>",
+            "<gray>Mining Wisdom: <green>+10</green></gray>",
+            "<gold>[⸕] [⸕] [<green>☘</green>] [<green>☘</green>] [<yellow>✦</yellow>]</gold>",
+            "",
+            "<light_purple><bold>Flowstate III</bold></light_purple>",
+            "<blue>Compact X</blue>",
+            "<blue>Efficiency X</blue>",
+            "<blue>Experience IV</blue>",
+            "<blue>Fortune IV</blue>",
+            "<blue>Lapidary V</blue>",
+            "<blue>Paleontologist V</blue>",
+            "<blue>Prismatic V</blue>",
+            "",
+            "<gray>Fuel Tank: <blue>Perfectly-Cut Fuel Tank</blue></gray>",
+            "<gray>Drill Engine: <blue>Amber-Polished Drill Engine</blue></gray>",
+            "<gray>Upgrade Module: <blue>Blue Cheese Goblin Omelette</blue></gray>",
+            "",
+            "<gray>Fuel: </gray><dark_green>69,801</dark_green><dark_gray>/100k</dark_gray>",
+            "",
+            "<blue>Heated Bonus</blue>",
+            "<gray>Grants <gold>+1☘ Mining Fortune</gold> and <gold>+4⸕</gold></gray>",
+            "<gray><gold>Mining Speed</gold> per <red>1♨ Heat</red> you have.</gray>",
+            "",
+            "<dark_gray><bold>*</bold> Co-op Soulbound <bold>*</bold></dark_gray>",
+            "<aqua><bold><obfuscated>a</obfuscated> DIVINE DRILL <obfuscated>a</obfuscated></bold></aqua>'>On</hover></green>/<hover show_text '<aqua>Heated Divans Drill</aqua>",
+            "<dark_gray>Breaking Power 10</dark_gray>",
+            "",
+            "<gray>Damage: <red>+75</red></gray>",
+            "<gray>Mining Speed: <green>+7,320</green> <gold>[+500]</gold> <blue>[+50] (+70)</blue> <light_purple>(+240)</light_purple></gray>",
+            "<gray>Pristine: <green>+4.7</green> <light_purple>(+2.2)</light_purple></gray>",
+            "<gray>Mining Fortune: <green>+340</green> <blue>[+5] (+25)</blue> <light_purple>(+120)</light_purple></gray>",
+            "<gray>Gemstone Fortune: <green>+50</green></gray>",
+            "<gray>Mining Wisdom: <green>+10</green></gray>",
+            "<gold>[⸕] [⸕] [<green>☘</green>] [<green>☘</green>] [<yellow>✦</yellow>]</gold>",
+            "",
+            "<light_purple><bold>Flowstate III</bold></light_purple>",
+            "<blue>Compact X</blue>",
+            "<blue>Efficiency X</blue>",
+            "<blue>Experience IV</blue>",
+            "<blue>Fortune IV</blue>",
+            "<blue>Lapidary V</blue>",
+            "<blue>Paleontologist V</blue>",
+            "<blue>Prismatic V</blue>",
+            "",
+            "<green>Perfectly-Cut Fuel Tank</green>",
+            "<dark_green>100,000 Max Fuel Capacity<dark_green>",
+            "<green>-10% Pickaxe Ability Cooldown</green>",
+            "",
+            "<green>Amber-Polished Drill Engine</green>",
+            "<gold>+600⸕ Mining Speed</gold>",
+            "<gold>+100☘ Mining Fortune</gold>",
+            "",
+            "<green>Blue Cheese Goblin Omelette Part</green>",
+            "<gray>Adds <green>+1 Level</green> to all of your unlocked <purple>Heart of</purple></gray>",
+            "<gray><purple>the Mountain</purple> perks.</gray>",
+            "",
+            "<gray>Fuel: </gray><dark_green>69,801</dark_green><dark_gray>/100k</dark_gray>",
+            "",
+            "<blue>Heated Bonus</blue>",
+            "<gray>Grants <gold>+1☘ Mining Fortune</gold> and <gold>+4⸕</gold></gray>",
+            "<gray><gold>Mining Speed</gold> per <red>1♨ Heat</red> you have.</gray>",
+            "",
+            "<dark_gray><bold>*</bold> Co-op Soulbound <bold>*</bold></dark_gray>",
+            "<aqua><bold><obfuscated>a</obfuscated> DIVINE DRILL <obfuscated>a</obfuscated></bold></aqua>'><red>Off</red></hover>"
+          ]
+        },
+        "dungeon_quality": {
+          "@value": "Dungeon Quality",
+          "desc": [
+            "Adds the dungeon quality to the lore.",
+            "",
+            "Example: <green><hover '<color #355AA0>\uD83C\uDF0A</color> <gold>Smart Skeleton Master Leggings</gold>",
+            "<gray>Item Quality: <red>50<gray>/</gray>50</red></gray>",
+            "<gray>Tier: <light_purple>8<gray>/</gray>10</light_purple></gray>",
+            "<gray>Gear Score: <light_purple>555</light_purple> <dark_gray>(2543)</dark_gray></gray>",
+            "<gray>Crit Chance: <red>+5%</red> <dark_gray>(+5.25%)</dark_gray></gray>",
+            "<gray>Crit Damage: <red>+57%</red> <dark_gray>(+271.32%)</dark_gray></gray>",
+            "<gray>Health: <green>+155</green> <blue>(+15)</blue> <dark_gray>(+737.8)</dark_gray></gray>",
+            "<gray>Defense: <green>+139</green> <blue>(+15)</blue> <dark_gray>(+661.64)</dark_gray></gray>",
+            "<gray>Intelligence: <green>+100</green> <blue>(+100)</blue> <dark_gray>(+476)</dark_gray></gray>",
+            "",
+            "<blue>Growth V, Protection V, Thorns III</blue>",
+            "",
+            "<gray>Increase the damage you deal with",
+            "arrows by <red>5%</red>.</gray>",
+            "<gold>Full Set Bonus: Skeleton Master</gold><gray> (0/4)</gray>",
+            "<gray>Increase the damage you deal with",
+            "arrows by <red>25%</red>.",
+            "",
+            "<green>This item is Undead ༕!<green>",
+            "",
+            "<gold><bold>LEGENDARY DUNGEON LEGGINGS</bold></gold>'>On</hover></green>/<red><hover '<gold>Smart Skeleton Master Leggings</gold>",
+            "<gray>Gear Score: <light_purple>555</light_purple> <dark_gray>(2543)</dark_gray></gray>",
+            "<gray>Crit Chance: <red>+5%</red> <dark_gray>(+5.25%)</dark_gray></gray>",
+            "<gray>Crit Damage: <red>+57%</red> <dark_gray>(+271.32%)</dark_gray></gray>",
+            "<gray>Health: <green>+155</green> <blue>(+15)</blue> <dark_gray>(+737.8)</dark_gray></gray>",
+            "<gray>Defense: <green>+139</green> <blue>(+15)</blue> <dark_gray>(+661.64)</dark_gray></gray>",
+            "<gray>Intelligence: <green>+100</green> <blue>(+100)</blue> <dark_gray>(+476)</dark_gray></gray>",
+            "",
+            "<blue>Growth V, Protection V, Thorns III</blue>",
+            "",
+            "<gray>Increase the damage you deal with",
+            "arrows by <red>5%</red>.</gray>",
+            "<gold>Full Set Bonus: Skeleton Master</gold><gray> (0/4)</gray>",
+            "<gray>Increase the damage you deal with",
+            "arrows by <red>25%</red>.",
+            "",
+            "<green>This item is Undead ༕!<green>",
+            "",
+            "<gold><bold>LEGENDARY DUNGEON LEGGINGS</bold></gold>'>Off</red>"
+          ]
+        },
+        "compact_level_bars": {
+          "@value": "Compact Level Bars",
+          "desc": [
+            "Compacts the bars in the SkyBlock levels menu into one line, making them fit on smaller screens.",
+            "",
+            "Example: <green><hover '<color #355AA0>\uD83C\uDF0A</color> <dark_aqua>Dungeon Tasks</dark_aqua>",
+            "<dark_gray>3 Tasks</dark_gray>",
+            "",
+            "<gray>All Dungeon related XP Tasks</gray>",
+            "",
+            "<yellow>▶ Catacombs Level Up</yellow> <dark_gray>(<red>980</red>/<green>1.220</green> <aqua>XP</aqua>)</dark_gray>",
+            "<yellow>▶ Class Level Up</yellow> <dark_gray>(<red>768</red>/<green>1.000</green> <aqua>XP</aqua>)</dark_gray>",
+            "<yellow>▶ Complete Dungeons</yellow> <dark_gray>(<green>540</green>/<green>540</green> <aqua>XP</aqua>)</dark_gray>",
+            "",
+            "<gray>Progress to Complete Category:</gray> <gold>82.9%</gold>",
+            "<gold><strikethrough>                     <white>    </white></strikethrough> <yellow>2,288</yellow>/<yellow>2,760 XP</yellow></gold>",
+            "",
+            "<yellow>Click to view tasks!</yellow>'>On</hover></green>/<red><hover '<dark_aqua>Dungeon Tasks</dark_aqua>",
+            "<dark_gray>3 Tasks</dark_gray>",
+            "",
+            "<gray>All Dungeon related XP Tasks</gray>",
+            "",
+            "<yellow>▶ Catacombs Level Up</yellow>",
+            "<strikethrough><green>                     </green><white>    </white></strikethrough> <green>980<dark_gray>/</dark_gray>1,120 XP</green>",
+            "",
+            "<yellow>▶ Class Level Up</yellow>",
+            "<strikethrough><green>                    </green><white>     </white></strikethrough> <green>768<dark_gray>/</dark_gray>1,000 XP</green>",
+            "",
+            "<yellow>▶ Complete Dungeons</yellow>",
+            "<strikethrough><green>                         </green></strikethrough> <green>540<dark_gray>/</dark_gray>540 XP</green>",
+            "",
+            "<gray>Progress to Complete Category:</gray> <gold>82.9%</gold>",
+            "<gold><strikethrough>                     <white>    </white></strikethrough> <yellow>2,288</yellow>/<yellow>2,760 XP</yellow></gold>",
+            "",
+            "<yellow>Click to view tasks!</yellow>'>Off</hover></red>"
+          ]
+        },
+        "armadillo_blocks_walked": {
+          "@value": "Prehistoric egg blocks walked",
+          "desc": "Shows how many blocks you have walked so far on a prehistory egg."
+        },
+        "storage_preview": {
+          "@value": "Storage Preview",
+          "desc": "Previews the contents of your backpacks and ender chest in the tooltip."
+        },
+        "museum_donation": {
+          "@value": "Museum Donation",
+          "desc": "Shows what items haven't been donated to museum in the tooltip."
+        },
+        "dye_hex": {
+          "@value": "Dye Hex Color",
+          "desc": "Shows the hex code of the dye on armors."
+        },
+        "dye_pos": {
+          "@value": "Dye Hex Color square position",
+          "desc": "Select where the color display square is positioned.",
+          "left": "Left",
+          "middle": "Middle",
+          "right": "Right"
+        },
+        "midas_bid_breakdown": {
+          "@value": "Midas Bid Breakdown",
+          "desc": "Shows the original bid and added coins on Midas Weapons."
+        }
+      },
+      "foraging": {
+        "@value": "Foraging",
+        "hotf": {
+          "shiftCost": {
+            "@value": "Show shift click cost",
+            "desc": "Shows the amount of powder that will be consumed on shift click."
+          },
+          "totalProgress": {
+            "@value": "Show total progress",
+            "desc": "Shows your total progress to maxing a perk."
+          },
+          "stackSize": {
+            "@value": "Show level as amount",
+            "desc": "Shows the perk level as item stack count."
+          },
+          "totalLeft": {
+            "@value": "Show total amount left",
+            "desc": "Displays the total amount that is still required to max a perk."
+          },
+          "reminder": {
+            "@value": "Reminder",
+            "desc": "Lets you add reminders for when you have enough whispers to buy a perk."
+          },
+          "reminderTitle": {
+            "@value": "Reminder Title",
+            "desc": "Shows a title when the reminder triggers."
+          }
+        },
+        "galatea": {
+          "@value": "Galatea",
+          "muteThePhantoms": {
+            "@value": "Mute the Phantoms",
+            "desc": "Mutes all phantoms making them not induce ear pain.",
+            "warning": "<yellow>SkyOcean mutes the phantom sounds by default, if you wish to change this open the config and search for <gold>Mute the Phantoms</gold>!"
+          },
+          "moongladeBeaconColor": {
+            "@value": "Moonglade Beacon Color",
+            "desc": "Changes the Moonglade Beacon beam color in Galatea to <red>Red</red> if it's inactive, and <green>green</green> if its active."
+          },
+          "shulkerOverwrite": {
+            "@value": "Retexture shulker",
+            "desc": "Recolors the shulkers to make them more visible."
+          }
+        }
+      },
+      "gambling": {
+        "@value": "Gambling",
+        "dungeons": {
+          "separator": {
+            "@value": "Dungeon Chest Gambling",
+            "desc": ""
+          },
+          "@value": "Dungeon Chest CSGO Case Opening",
+          "desc": "Shows a CSGO case opening animation when opening a dungeon chest.",
+          "croesus": {
+            "@value": "Also Show Case Opening in Croesus",
+            "desc": "Will hide croesus summary before opening the chest, to not spoil the surprise."
+          },
+          "time": {
+            "@value": "Animation Time",
+            "desc": "Changes the time the animation takes. (in seconds)"
+          }
+        },
+        "vanguard": {
+          "separator": {
+            "@value": "Vanguard Gambling",
+            "desc": ""
+          },
+          "@value": "Vanguard Slot Machine",
+          "desc": "Shows a slot machine animation when looting a Vanguard.",
+          "hide_chat": {
+            "@value": "Hide Chat While Gambling",
+            "desc": "Hides the chat messages while the gambling animation is playing so you don't get spoiled."
+          },
+          "mode": {
+            "@value": "Mode",
+            "desc": "Changes the mode of the slot machine between most expensive item or a predefined set of rare items (Weight <= 10).",
+            "predefined": "Predefined",
+            "most_expensive": "Most expensive"
+          },
+          "time": {
+            "@value": "Animation Time",
+            "desc": "Changes the time the animation takes. (in seconds)"
+          }
+        },
+        "credits": {
+          "@value": "Credits",
+          "desc": [
+            "Dungeon Chest Gambling is recreation from the 1.8 mod <hover 'Click to visit their GitHub'><url 'https://github.com/Ev-Hoang/Bedrock-Chest-Case-Opening'><blue>Bedrock Chest Case Opening</blue></url></hover>.",
+            "",
+            "Slot Machine textures are created by <hover 'Click to visit her BlueSky'><url 'https://bsky.app/profile/vrachel.bsky.social'><color:#4FB1FF>rachel</color></url></hover>."
+          ]
+        }
+      },
+      "hotkeys": {
+        "@value": "Custom Hotkeys",
+        "enabled": {
+          "@value": "Enabled",
+          "desc": "Whether the custom hotkeys are enabled or not."
+        },
+        "sequence_input_delay": {
+          "@value": "Sequence input delay",
+          "desc": "The max delay between two keypresses in a sequence. (in ms)"
+        },
+        "edit": {
+          "@value": "Edit hotkeys",
+          "desc": "Opens the hotkey edit screen."
+        }
+      },
+      "text_replacements": {
+        "@value": "Text Replacements",
+        "enabled": {
+          "@value": "Enabled",
+          "desc": "Global toggle for all text replacements, regardless of their respective toggles."
+        },
+        "outside_skyblock": {
+          "@value": "Outside SkyBlock",
+          "desc": "Allows text replacements to be active outside of skyblock."
+        }
+      }
+    },
+    "garden": {
+      "pest_bait_type": "<dark_gray>Pest Bait Type</dark_gray>",
+      "open_sack": "<dark_gray>Open Sack</dark_gray>"
+    },
+    "inventory": {
+      "sack_value": {
+        "@value": "<dark_gray>Sack Value</dark_gray>",
+        "total_value": "Total: "
+      },
+      "buttons": {
+        "configuration": "<white>Button Configuration",
+        "item": "Item ID / Skyblock ID",
+        "command": "Command",
+        "screen_title": "Screen Title",
+        "tooltip": "Button Tooltip",
+        "select_button": "<color #cff8ff>Select Button to Edit",
+        "enable_first": "Enable inventory buttons in the Config first!",
+        "disable": "Disable",
+        "enable": "Enable",
+        "reset": "Reset"
+      }
+    },
+    "screens": {
+      "item_search": {
+        "sort": {
+          "amount": "Amount",
+          "price": "Price",
+          "rarity": "Rarity"
+        }
+      }
+    },
+    "keybind": {
+      "item_search": "Open Item Search",
+      "item_value": "Open Item Value",
+      "crafthelper": "Set as active Craft Helper Item",
+      "item_highlight": "Highlight matching Items",
+      "customize": "Customize Item"
+    },
+    "gradients": {
+      "default": "Default",
+      "rainbow": "Rainbow",
+      "bisexual": "Bisexual",
+      "gay": "Gay",
+      "lesbian": "Lesbian",
+      "pansexual": "Pansexual",
+      "asexual": "Asexual",
+      "non_binary": "Non Binary",
+      "trans": "Transgender"
+    },
+    "minecraft_colors": {
+      "white": "<color #FFFFFF> White </color>",
+      "orange": "<color #FF681F> Orange </color>",
+      "magenta": "<color #FF00FF> Magenta </color>",
+      "light_blue": "<color #9AC0CD> Light Blue </color>",
+      "yellow": "<color #FFFF00> Yellow </color>",
+      "lime": "<color #BFFF00> Lime </color>",
+      "pink": "<color #FF69B4> Pink </color>",
+      "gray": "<color #808080> Gray </color>",
+      "light_gray": "<color #D3D3D3> Light Gray </color>",
+      "cyan": "<color #00FFFF> Cyan </color>",
+      "purple": "<color #A020F0> Purple </color>",
+      "blue": "<color #0000FF> Blue </color>",
+      "brown": "<color #8B4513> Brown </color>",
+      "green": "<color #00FF00> Green </color>",
+      "red": "<color #FF0000> Red </color>",
+      "black": "<color #000000> Black </color>"
+    },
+    "overlays": {
+      "crafthelper": "Crafthelper",
+      "background": {
+        "disable": "Disable background",
+        "enable": "Enable background"
+      }
+    }
+  }
+}
